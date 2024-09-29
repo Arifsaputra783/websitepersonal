@@ -1,0 +1,583 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1626346649512-2ab1366aa5b4");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/*NAVIGASI BAR STAR*/
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  position: relative;
+}
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensures navbar is above other elements */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+.nav-links .active {
+  background-color: #ff7f7f;
+  color: #fff;
+  font-weight: bold;
+}
+
+main {
+  padding-top: 70px; /* Adjust based on navbar height */
+}
+
+section {
+  padding: 50px 20px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+/*NAVIGASI BAR END*/
+
+.profile-card {
+  width: 90%; /* Lebar default 90% agar lebih responsif */
+  max-width: 500px; /* Batas maksimal lebar pada layar besar */
+  margin: 50px auto; /* Jarak atas dan bawah 50px, dan tengah pada sumbu horizontal */
+  padding: 20px;
+  border-radius: 20px;
+
+  background-size: 70%; /* Menyesuaikan ukuran background dengan 70% dari ukuran aslinya */
+  background-repeat: no-repeat; /* Mencegah pengulangan gambar latar belakang */
+  background-position: center; /* Memposisikan gambar latar belakang di tengah */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: #fbf5f5ee;
+  text-align: center;
+}
+
+/* Untuk gambar dalam profile-card */
+.profile-card img {
+  width: 100px; /* Lebar gambar diatur menjadi 100px */
+  height: 100px; /* Tinggi gambar juga diatur menjadi 100px untuk memastikan bentuk bulat */
+  border-radius: 50%; /* Membuat gambar menjadi bulat sempurna */
+  object-fit: cover; /* Gambar akan menyesuaikan agar mengisi seluruh area dengan proporsi yang tepat */
+  margin-bottom: 20px;
+}
+
+/* Untuk teks judul */
+.profile-card h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+/* Untuk link sosial */
+.social-links {
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  font-size: small;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #d3720a;
+}
+
+.social-links .icon {
+  margin-right: 5px;
+}
+
+/* Media query untuk perangkat mobile */
+@media (max-width: 600px) {
+  .profile-card {
+    width: 100%; /* Lebar di perangkat mobile akan lebih besar */
+    margin: 20px auto; /* Kurangi jarak atas dan bawah */
+    padding: 15px; /* Kurangi padding untuk layar kecil */
+  }
+
+  .profile-card h2 {
+    font-size: 24px; /* Kurangi ukuran teks untuk layar kecil */
+  }
+
+  .social-links a {
+    margin: 0 5px; /* Kurangi margin antar ikon di layar kecil */
+  }
+}
+
+.page-separator {
+  margin: 10px 0; /* Atur jarak vertikal (atas dan bawah) */
+  border-top: 2px solid #ffffff; /* Garis pemisah */
+  width: 100%; /* Lebar garis pemisah */
+  margin-left: auto; /* Pusatkan garis pemisah */
+  margin-right: auto; /* Pusatkan garis pemisah */
+}
+
+/*pembatas*/
+
+/*ABOUT ME*/
+
+/*ABOUT ME*/
+
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #181010;
+  background-color: #fffefe;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  background-color: #9c9c9cce;
+  color: rgb(16, 2, 2);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+}
+
+.profile-info h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.profile-info p {
+  margin: 5px 0;
+  font-size: 1.2em;
+}
+
+/* About Me Section */
+.about-me {
+  padding: 40px 0;
+  background-color: rgba(240, 236, 236, 0.667);
+  text-align: center;
+}
+
+.about-me h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.about-me p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/* Skills Section */
+.skills-section {
+  padding: 40px 0;
+  background-color: #f0ecec;
+  text-align: center;
+}
+
+.skills-section h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.skill-card {
+  display: inline-block;
+  background: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 150px;
+}
+
+.skill-card i {
+  font-size: 2em;
+  color: #007bff;
+}
+
+.skill-card span {
+  display: block;
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+/* Portfolio Section */
+
+/* Footer */
+.footer {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1em;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icon {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.social-icon:hover {
+  color: #c6980f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-info h1 {
+    font-size: 1.5em;
+  }
+
+  .profile-info p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-info h1 {
+    font-size: 1.2em;
+  }
+
+  .profile-info p {
+    font-size: 0.9em;
+  }
+
+  .image-item {
+    width: 120px;
+    height: 100px;
+  }
+
+  .skills-section {
+    padding: 20px 0;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+/*CARD*/
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px; /* Limits the container width */
+  margin: 0 auto; /* Centers the container */
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 250px; /* Set a fixed width for the cards */
+  text-align: center;
+}
+
+.card-image img {
+  width: 100px; /* Size for the circular photo */
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/*PEMBATAS*/
+
+/*GALERI STAR*/
+.gallery-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Center the gallery */
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 100%;
+  height: 100%; /* Ensures the image container maintains its aspect ratio */
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Makes the image cover the container while maintaining its aspect ratio */
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover .gallery-image {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .col-md-3 {
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/*GALERY END*/
+
+.page-separator {
+  margin: 10px 0; /* Atur jarak vertikal (atas dan bawah) */
+  border-top: 2px solid #0a0000; /* Garis pemisah */
+  width: 80%; /* Lebar garis pemisah */
+  margin-left: auto; /* Pusatkan garis pemisah */
+  margin-right: auto; /* Pusatkan garis pemisah */
+}
+
+/*GARIS PEMISAH*/
+/* icon tols*/
+.icon-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+}
+
+.image-item {
+  width: 100px;
+  text-align: center;
+}
+
+.icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-wrapper img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  padding: 5px;
+}
+
+.icon-wrapper p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/*icon tols*/
+
+/*pembatas tabel*/
+
+.table-container {
+  max-width: 100%;
+  overflow-x: auto; /* Untuk scroll horizontal jika tabel melebihi lebar kontainer */
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #14010113;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modern-table {
+  width: 100%;
+  border-collapse: collapse; /* Menghilangkan jarak antar border sel */
+  font-family: "Arial", sans-serif;
+  border-radius: 8px; /* Sudut membulat pada tabel */
+  overflow: hidden; /* Menyembunyikan bagian tabel yang melebihi border-radius */
+}
+
+.modern-table thead {
+  background-color: #007bff; /* Warna latar belakang header tabel */
+  color: #fff; /* Warna teks header tabel */
+}
+
+.modern-table th,
+.modern-table td {
+  padding: 15px; /* Padding sel tabel */
+  text-align: left; /* Menyelaraskan teks ke kiri */
+  border-bottom: 1px solid #ddd; /* Garis pemisah antar baris */
+}
+
+.modern-table tr:nth-child(even) {
+  background-color: #f9f9f9; /* Warna latar belakang baris genap */
+}
+
+.modern-table tr:hover {
+  background-color: #f1f1f1; /* Warna latar belakang saat hover */
+}
+
+.modern-table th {
+  font-weight: bold; /* Menebalkan teks header tabel */
+  text-transform: uppercase; /* Mengubah teks menjadi huruf kapital */
+}
+
+.modern-table td {
+  color: #333; /* Warna teks sel tabel */
+}
+
+.modern-table .positive-change {
+  color: #28a745; /* Warna hijau untuk perubahan positif */
+}
+
+.modern-table .negative-change {
+  color: #dc3545; /* Warna merah untuk perubahan negatif */
+}
+
+/*BARISAKHIR*/
+
+/* Footer */
+.footer {
+  background-color: #ffffff;
+  color: rgb(7, 6, 6);
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+.footer .container {
+  width: 90%; /* Membatasi lebar kontainer agar tidak terlalu melebar pada layar besar */
+  max-width: 1200px; /* Lebar maksimal kontainer */
+  margin: 0 auto;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1em;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icon {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.social-icon: hover;
